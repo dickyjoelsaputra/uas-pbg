@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::post('/books-ajax', [BookController::class,'store']);
+Route::get('/books-ajax', [BookController::class,'index']);
+Route::get('/books-ajax/{book}', [BookController::class,'show']);
+Route::put('/books-ajax/{book}', [BookController::class,'update']);
+Route::delete('/books-ajax/{book}', [BookController::class,'destroy']);
