@@ -81,6 +81,25 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <b>Ulangan Akhir Semester</b>
+                        <hr>
+                        <ul>
+                            <li>
+                                <p>Nama : Dicky Joel Saputra (18201021)</p>
+                            </li>
+                            <li>
+                                <p>Mata Kuliah : Pemrograman Berbasis Web</p>
+                            </li>
+                            <li>
+                                <p>Dosen : Septiana Ningtyas, S.Kom.,M.Kom</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
         {{-- MODAL --}}
@@ -133,6 +152,8 @@
         </div>
         {{-- MODAL --}}
     </div>
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
@@ -400,7 +421,7 @@
                         // Fetch the books again
 
                         currentBookId = null;
-                        
+
                         $('#editForm').trigger('reset');
                         fetchBooks();
                     },
